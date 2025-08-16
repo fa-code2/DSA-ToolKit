@@ -1,0 +1,6 @@
+# Add .gitkeep files to all empty directories
+$emptyDirs = Get-ChildItem -Recurse -Directory | Where-Object {(Get-ChildItem $_.FullName -File -ErrorAction SilentlyContinue).Count -eq 0}
+foreach ($dir in $emptyDirs) {
+    New-Item -Path "$($dir.FullName)\.gitkeep" -ItemType File -Force
+    Write-Host "Added .gitkeep to: $($dir.FullName)"
+}
