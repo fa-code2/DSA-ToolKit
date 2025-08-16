@@ -45,9 +45,15 @@ DSA-Repository/
 │   │   ├── divide-conquer/
 │   │   └── graph-algorithms/
 │   └── problems/
-│       ├── easy/
-│       ├── medium/
-│       └── hard/
+│       ├── leetcode/
+│       │   ├── easy/
+│       │   ├── medium/
+│       │   └── hard/
+│       ├── hackerrank/
+│       │   ├── algorithms/
+│       │   └── data-structures/
+│       ├── codeforces/
+│       └── codechef/
 ├── python/
 │   ├── data-structures/
 │   │   ├── arrays/
@@ -68,9 +74,15 @@ DSA-Repository/
 │   │   ├── divide-conquer/
 │   │   └── graph-algorithms/
 │   └── problems/
-│       ├── easy/
-│       ├── medium/
-│       └── hard/
+│       ├── leetcode/
+│       │   ├── easy/
+│       │   ├── medium/
+│       │   └── hard/
+│       ├── hackerrank/
+│       │   ├── algorithms/
+│       │   └── data-structures/
+│       ├── codeforces/
+│       └── codechef/
 └── tests/
     ├── cpp/
     └── python/
