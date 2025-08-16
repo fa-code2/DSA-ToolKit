@@ -194,8 +194,8 @@ We welcome contributions! Please follow these guidelines:
 
 4. **File naming convention:**
    - Use snake_case for file names
-   - Include language extension (.cpp, .py)
-   - Example: `binary_search.cpp`, `quicksort.py`
+   - Include no language extension (.cpp, .py)
+   - Example: `binary_search`, `quicksort`
 
 5. **Code structure for each file:**
 
@@ -295,13 +295,12 @@ class Solution:
 
 **File Naming Convention:**
 ```
-Platform_ProblemNumber_ProblemName.extension
+Platform_ProblemNumber_ProblemName
 
 Examples:
-- leetcode_1323_maximum_69_number.py
-- hackerrank_arrays_left_rotation.cpp
-- codeforces_800a_two_arrays.py
-- codechef_beginner_find_remainder.cpp
+-  1323_maximum_69_number (In leetcode)
+-  arrays_left_rotation (In hackerrank)
+
 ```
 
 
