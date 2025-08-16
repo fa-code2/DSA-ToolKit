@@ -359,7 +359,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you have any questions or suggestions, feel free to:
 - Open an issue in this repository
 - Reach out via [faaa367810@gmail.com]
-- Connect on [LinkedIn](www.linkedin.com/in/fa-aslam)
+- Connect on [Linkedin](https://www.linkedin.com/in/fa-aslam/)
 
 ---
 
