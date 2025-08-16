@@ -178,7 +178,7 @@ We welcome contributions! Please follow these guidelines:
    - Use meaningful variable names
    - Add comments explaining complex logic
    - Include time/space complexity analysis
-   - Add test cases
+   
 
 4. **File naming convention:**
    - Use snake_case for file names
