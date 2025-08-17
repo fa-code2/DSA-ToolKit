@@ -17,7 +17,7 @@ A comprehensive collection of Data Structures and Algorithms implementations in 
 ## 📁 Repository Structure
 
 ```
-DSA-Repository/
+DSA-ToolKit/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
