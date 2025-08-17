@@ -1,0 +1,30 @@
+/*
+Platform: LeetCode
+Problem: Maximum 69 Number
+Problem Number: 1323
+URL: https://leetcode.com/problems/maximum-69-number/
+Difficulty: Easy
+Time Complexity: O(n) where n is number of digits
+Space Complexity: O(n) for string conversion
+Author: Fatima(~ ^ ^~)
+Date: 2024-08-16
+
+Problem Description:
+Given a positive integer num consisting only of digits 6 and 9.
+Return the maximum number you can get by changing at most one digit.
+
+Approach:
+Convert to string, find first '6' from left and replace with '9'.
+This gives maximum value as we're changing the most significant digit.
+*/
+class Solution {
+public:
+    int maximum69Number (int num) {
+       string s = to_string (num);
+
+       for(char &c : s){
+        if(c == '6'){ c='9' ; break; }
+       }
+       return stoi(s);
+    }
+};
