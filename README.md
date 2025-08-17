@@ -17,7 +17,7 @@ A comprehensive collection of Data Structures and Algorithms implementations in 
 ## 📁 Repository Structure
 
 ```
-DSA-Repository/
+DSA-ToolKit/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
@@ -88,18 +88,8 @@ DSA-Repository/
     └── python/
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
-### Prerequisites
-
-**For C++:**
-- GCC 7.0+ or Clang 5.0+
-- CMake 3.10+ (optional)
-- Any C++ IDE or text editor
-
-**For Python:**
-- Python 3.7+
-- pip package manager
 
 ### Installation
 
@@ -110,7 +100,7 @@ cd DSA-ToolKit
 ```
 
 
-## 📊 Data Structures
+##  Data Structures
 
 ### Basic Data Structures
 - **Arrays** - Static and dynamic arrays, operations
@@ -125,7 +115,7 @@ cd DSA-ToolKit
 - **Hash Tables** - Collision handling, hash functions
 - **Tries** - Prefix trees, autocomplete implementation
 
-## 🧮 Algorithms
+##  Algorithms
 
 ### Sorting Algorithms
 - Bubble Sort, Selection Sort, Insertion Sort
@@ -152,7 +142,7 @@ cd DSA-ToolKit
 - Greedy algorithms
 - Divide and Conquer
 
-## 🎯 Problem Solutions
+##  Problem Solutions
 
 Problems are categorized by difficulty:
 - **Easy:** Basic implementation and simple logic
@@ -180,7 +170,7 @@ Each implementation includes complexity analysis:
 | Binary Tree   | O(n)   | O(n)   | O(n)      | O(n)     | O(n)  |
 | BST           | O(log n)| O(log n)| O(log n) | O(log n) | O(n)  |
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! Please follow these guidelines:
 
@@ -355,11 +345,11 @@ Track your learning progress:
 - [ ] Graph Algorithms
 - [ ] String Algorithms
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Contributors who have helped improve this repository
 - The open-source community for inspiration and best practices
