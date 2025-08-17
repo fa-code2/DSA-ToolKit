@@ -1,0 +1,47 @@
+/*
+Problem Number: 3
+URL: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+
+Time Complexity: O(n) where each character is inserted and removed from the set at most once.
+Space Complexity: O(min(n, k)) Where k is the alphabet size (for ASCII k=128, for Unicode bigger).
+
+Author: Fatima (~ ^ ^ ~)
+Date: 2024-08-17
+
+Problem Description:
+Given a string s, find the length of the longest substring without duplicate characters.
+
+
+Approach (Sliding Window + HashSet):
+
+1.Use two pointers (left and right) to represent a sliding window.
+2.Expand right one step at a time, adding characters to the unordered_set.
+3.If a duplicate is found, move left forward and remove characters from the set until the duplicate is removed.
+4.Track the maximum window size (right - left + 1) as the result.
+
+This ensures each character is processed at most twice (once added, once removed).
+
+*/
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        
+        int left =0;
+        int maxLength=0;
+
+        unordered_set<char>set;
+
+        for( int right = 0 ; right < s.length(); right++)
+        {
+            while(set.find(s[right]) != set.end()){
+                set.erase(s[left]);
+                left++;
+            }
+
+            set.insert(s[right]);
+            maxLength = max(maxLength , right-left +1 );
+        }
+
+        return maxLength;
+    }
+};
