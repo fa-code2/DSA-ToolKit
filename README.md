@@ -90,16 +90,6 @@ DSA-Repository/
 
 ##  Getting Started
 
-### Prerequisites
-
-**For C++:**
-- GCC 7.0+ or Clang 5.0+
-- CMake 3.10+ (optional)
-- Any C++ IDE or text editor
-
-**For Python:**
-- Python 3.7+
-- pip package manager
 
 ### Installation
 
