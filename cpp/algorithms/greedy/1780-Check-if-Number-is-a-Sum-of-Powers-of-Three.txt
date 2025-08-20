@@ -1,0 +1,38 @@
+/*
+Problem Number: 1780
+URL: https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/editorial/
+
+Time Complexity: O(log3 (n)) 
+
+Author: Fatima (~ ^ ^ ~)
+Date: 2024-08-20
+
+Problem Description:
+Given an integer n, return true if it is possible to represent n as the sum of distinct powers of three. Otherwise, return false.
+-An integer y is a power of three if there exists an integer x such that y == 3x.
+
+ 
+
+
+Approach(How it works):
+
+In base-3 (ternary), n must have only 0 or 1 as digits.
+If any digit = 2, it means we need to reuse the same power of 3 twice → not allowed.
+
+Example:
+n = 12 → base-3 is 110  (can be 9 + 3).
+n = 21 → base-3 is 210  (digit 2 appears).
+*/
+
+
+class Solution {
+public:
+    bool checkPowersOfThree(int n) {
+        while(n > 0) {
+            int rem = n % 3;       // Get remainder when divided by 3
+            if(rem > 1) return false; // If remainder is 2 → not possible
+            n = n / 3;            // Keep dividing by 3
+        }
+        return true; // Passed all checks → valid
+    }
+};
