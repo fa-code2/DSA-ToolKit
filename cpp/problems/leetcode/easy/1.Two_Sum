@@ -1,8 +1,8 @@
 /*
 
 URL:https://leetcode.com/problems/two-sum/description/
-Time Complexity: O(N^2)
-Space Complexity: O(1)
+Time Complexity: O(N)
+Space Complexity: O(N)
 Author:Fatima Aslam (~^ - ^~)
 
 
