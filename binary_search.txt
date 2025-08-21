@@ -6,7 +6,7 @@ URL: https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
 Difficulty: Medium
 Time Complexity: O(N log(Sum(weights)))
 Space Complexity: O(1)
-Author: Asif Qamar (Cyphrr_07) ( ฅ(^•ﻌ•^ฅ) )
+Author: Asif Qamar (Cyphrr_07) ฅ(^•ﻌ•^ฅ) 
 Date: August 21, 2025
 
 Problem Description:
@@ -50,5 +50,4 @@ class Solution:
                 left = mid + 1
         return res
 
-Happy Coding !!!
-one of the important question of Binary Search .
+
