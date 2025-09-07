@@ -1,0 +1,53 @@
+"""
+Platform: LeetCode
+Problem: Capacity To Ship Packages Within D Days
+Problem Number: 1011
+URL: https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
+Difficulty: Medium
+Time Complexity: O(N log(Sum(weights)))
+Space Complexity: O(1)
+Author: Asif Qamar (Cyphrr_07) ฅ(^•ﻌ•^ฅ) 
+Date: August 21, 2025
+
+Problem Description:
+We are given an array weights[] where weights[i] is the weight of the i-th package. 
+We want to ship all packages within D days using a ship with minimum required capacity.
+The ship must load packages in order and cannot skip items. 
+Find the minimum ship capacity to ship within D days.
+
+Approach:
+- Apply Binary Search on Answer:
+    - Lower bound = max(weights)  (at least largest package must fit)
+    - Upper bound = sum(weights)  (capacity if we ship everything in 1 day)
+- Check feasibility using greedy loading (simulate shipping process).
+- Narrow the range until we find the minimum feasible capacity.
+"""
+
+# ====================== PLATFORM SOLUTION ======================
+from typing import List
+
+class Solution:
+    def shipWithinDays(self, weights: List[int], days: int) -> int:
+        def canShip(cap: int) -> bool:
+            ships, curCap = 1, cap
+            for w in weights:
+                if w > cap:
+                    return False
+                if curCap - w < 0:
+                    ships += 1
+                    curCap = cap
+                curCap -= w
+            return ships <= days
+
+        left, right = max(weights), sum(weights)
+        res = right
+        while left <= right:
+            mid = (left + right) // 2
+            if canShip(mid):
+                res = mid
+                right = mid - 1
+            else:
+                left = mid + 1
+        return res
+
+
